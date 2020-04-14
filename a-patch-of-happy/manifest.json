@@ -4,17 +4,19 @@
   "version": "1.0",
   "description": "Replaces the new tab page with a customized space made for you, because you're my happy.",
   "browser_action": {
-    "default_icon": "leaf.png",
-    "default_popup": "popup.html"
+    "default_icon": "images/leaf.png"
   },
-  "icons": { "16": "leaf.png",
-           "48": "leaf.png",
-          "128": "leaf.png"
+  "icons": { "16": "images/leaf.png",
+           "48": "images/leaf.png",
+          "128": "images/leaf.png"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
   "permissions": [
     "tabs"
-  ]
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
